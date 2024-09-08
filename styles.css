@@ -1,0 +1,381 @@
+/* Algemene opmaak */
+body {
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    background-color: #ffe3e3;
+    color: #333;
+}
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    width: 100%; /* Volledige breedte */
+}
+
+/* Standaard voor alle schermformaten */
+.hero-image {
+    width: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding de hele hero-sectie vult zonder te vervormen */
+}@media (min-width: 769px) {
+    .hero {
+        height: 40vh; /* 40% van de viewporthoogte */
+    }
+
+    .hero-image {
+        height: 100%;
+    }
+}/* Voor kleinere schermen (bijv. mobiel) */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh; /* Bijvoorbeeld 60% van de viewporthoogte op mobiel */
+    }
+
+    .hero-image {
+        height: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Kleinere tekst voor mobiele apparaten */
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Indie Flower", cursive;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Carousel 
+.carousel {
+    
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    max-width: 33.33%;
+}
+    */
+
+/* Navbar */
+/* Algemene sectie-opmaak */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Patroonafscheiding */
+.pattern-separator {
+    height: 70px; /* Hoogte van de afscheiding */
+    background-image: url('img/kawaii_banner.jpg'); /* Gebruik je herhalende patroon */
+    background-repeat: repeat-x; /* Herhaal het patroon horizontaal */
+    background-size: contain;
+    opacity: 70%;
+}
+
+/* Navigatiebalk */
+/* Navigatiebalk */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffb3c6;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #ffe3e3;
+}
+
+
+
+/* Welkomsttekst */
+.welcome-text {
+    text-align: center;
+    padding: 10px;
+}
+
+.welcome-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.welcome-text a{
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff89b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ff6a92;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    border-radius: 10px;
+    width:170px;
+    height:170px;
+    margin: 0 10px;
+ }@media (max-width: 768px){
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ffb3c6;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+/* Responsieve opmaak */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    
+}
+/* Algemene sectie-opmaak */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFB3C6;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Menu categorieën styling */
+.menu-category {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFB3C6;
+}
+
+.menu-category h3 {
+    font-size: 2rem;
+    color: #FF6F91;
+    margin-bottom: 10px;
+}
+
+.menu-category p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Afbeeldingen in categorieën */
+.category-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsief design */
+@media (max-width: 768px) {
+    .category-images {
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .category-images img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+}
+ol {
+    list-style-type: none; /* Verwijdert de nummers van de lijst */
+    padding-left: 0; 
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+ol li div {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FF6F91; /* Eventueel een kleur naar keuze */
+}
+
+ol li p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+.motion-container {
+    text-align: center; /* Centreert de animatie horizontaal */
+    margin-top: 20px; /* Ruimte boven de animatie */
+}
+
+.motion-container img,
+.motion-container video {
+    max-width: 50%; /* Beperk de breedte tot 100% van de container */
+    height: 30%;    /* Houd de hoogte in verhouding met de breedte */
+    display: block;  /* Zorg ervoor dat de animatie als een blok wordt weergegeven, geen extra ruimte onder de afbeelding */
+    margin: 0 auto;  /* Centreer de animatie horizontaal */
+}
+.contact-form, .reservation-form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF6F91; /* Kleur die past bij je stijl */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button.disabled {
+    background-color: #ddd; /* Grijze achtergrond om aan te geven dat de knop inactief is */
+    color: #aaa; /* Lichtere tekstkleur */
+    cursor: not-allowed; /* Cursor verandert naar een niet-toegestane cursor bij hoveren */
+    border: 1px solid #ccc; /* Grijze rand om de knop */
+}
+
+button.disabled:hover {
+    background-color: #ddd; /* Zorg ervoor dat de achtergrondkleur niet verandert bij hoveren */
+    color: #aaa;
+}
+
+button:hover {
+    background-color: #FF4C7F; /* Donkerder kleurtje voor hover effect */
+}
+
